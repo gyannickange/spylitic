@@ -1,0 +1,130 @@
+/* ==========================================================================
+   Spylitic Landing Page Styles - Modern SaaS Aesthetics
+   ========================================================================== */
+
+:root {
+  --nav-height: 80px;
+  --glass-bg: rgba(15, 23, 42, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glow-primary: rgba(59, 130, 246, 0.4);
+}
+
+.dark main {
+  background: radial-gradient(circle at 50% -10%, #1E1B4B 0%, #0F172A 50%, #020617 100%);
+}
+
+/* Glassmorphism */
+.glass-nav {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.glass-card {
+  background: rgba(30, 41, 59, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--glass-border);
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  border-color: var(--color-cta);
+  box-shadow: 0 0 20px var(--glow-primary);
+  transform: translateY(-4px);
+}
+
+/* Gradients & Text */
+.text-gradient {
+  background: linear-gradient(135deg, #fff 0%, #94A3B8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-primary {
+  background: linear-gradient(135deg, #3B82F6 0%, #2DD4BF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.1); }
+}
+
+.glow-bg {
+  position: absolute;
+  filter: blur(120px);
+  z-index: -1;
+  border-radius: 100%;
+}
+
+/* Section Spacing */
+section {
+  padding: 120px 0;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 80px 0;
+  }
+}
+
+/* Hero Specific */
+.hero-content {
+  padding-top: calc(var(--nav-height) + 40px);
+}
+
+/* Custom Buttons (beyond Tailwind utilities) */
+.btn-primary-glow {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary-glow::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg, transparent, var(--color-cta), transparent);
+  animation: rotate 4s linear infinite;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.btn-primary-glow:hover::after {
+  opacity: 1;
+}
+
+@keyframes rotate {
+  100% { transform: rotate(360deg); }
+}
+
+/* Longevity Score Visual */
+.score-track {
+  height: 8px;
+  background: #1E293B;
+  border-radius: 4px;
+  position: relative;
+}
+
+.score-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #3B82F6, #2DD4BF);
+  border-radius: 4px;
+}
