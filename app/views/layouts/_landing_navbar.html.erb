@@ -4,20 +4,20 @@
       <div class="flex items-center">
         <a href="/" class="flex items-center space-x-2">
           <span class="text-2xl font-bold font-heading tracking-tighter text-text-primary">
-            Spylitic
+            <%= t("application_name") %>
           </span>
         </a>
       </div>
       <div class="hidden md:flex items-center space-x-8">
-        <a href="#problem" class="text-sm font-medium text-text-secondary hover:text-cta transition-colors">Le problème</a>
-        <a href="#solution" class="text-sm font-medium text-text-secondary hover:text-cta transition-colors">La solution</a>
-        <a href="#features" class="text-sm font-medium text-text-secondary hover:text-cta transition-colors">Fonctionnalités</a>
-        <a href="#audience" class="text-sm font-medium text-text-secondary hover:text-cta transition-colors">Pour qui ?</a>
+        <a href="#problem" class="text-sm font-medium text-text-secondary hover:text-cta transition-colors"><%= t("layouts.navbar.problem") %></a>
+        <a href="#solution" class="text-sm font-medium text-text-secondary hover:text-cta transition-colors"><%= t("layouts.navbar.solution") %></a>
+        <a href="#features" class="text-sm font-medium text-text-secondary hover:text-cta transition-colors"><%= t("layouts.navbar.features") %></a>
+        <a href="#audience" class="text-sm font-medium text-text-secondary hover:text-cta transition-colors"><%= t("layouts.navbar.audience") %></a>
       </div>
       <div class="flex items-center space-x-4">
-        <a href="#" class="text-sm font-semibold text-text-primary hover:text-cta transition-colors">Explore ads</a>
+        <a href="#" class="text-sm font-semibold text-text-primary hover:text-cta transition-colors"><%= t("layouts.navbar.explore_ads") %></a>
         <a href="#" class="inline-flex items-center justify-center px-5 py-2.5 border border-transparent text-sm font-bold rounded-full text-white bg-cta hover:bg-cta-hover transition-all shadow-lg shadow-cta/20 hover:scale-105 active:scale-95">
-          Join early access
+          <%= t("layouts.navbar.join_early_access") %>
         </a>
       </div>
     </div>

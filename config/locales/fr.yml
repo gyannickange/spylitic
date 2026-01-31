@@ -1,48 +1,48 @@
-# Rails I18n: https://guides.rubyonrails.org/i18n.html
-# In views: <%= t("key") %> or <%= t("scope.key") %>
+# Locale français — landing et layouts
+# https://guides.rubyonrails.org/i18n.html
 
-en:
+fr:
   application_name: "Spylitic"
 
   layouts:
     landing:
-      title: "Spylitic - Understand why ads work"
-      meta_description: "Competitive Ad Intelligence powered by AI. Across Facebook & TikTok — before you spend a dollar."
+      title: "Spylitic - Comprenez pourquoi les pubs fonctionnent"
+      meta_description: "Intelligence publicitaire compétitive propulsée par l'IA. Facebook & TikTok — avant de dépenser un euro."
     navbar:
       problem: "Le problème"
       solution: "La solution"
       features: "Fonctionnalités"
       audience: "Pour qui ?"
-      explore_ads: "Explore ads"
-      join_early_access: "Join early access"
+      explore_ads: "Explorer les pubs"
+      join_early_access: "Rejoindre l'accès anticipé"
     footer:
-      tagline: "Competitive Ad Intelligence powered by AI. Comprenez enfin pourquoi les publicités de vos concurrents fonctionnent."
+      tagline: "Intelligence publicitaire compétitive propulsée par l'IA. Comprenez enfin pourquoi les publicités de vos concurrents fonctionnent."
       platforms_heading: "Plateformes"
       meta_ads: "Meta Ads"
       tiktok_ads: "TikTok Ads"
       google_ads: "Google Ads"
       pinterest_ads: "Pinterest Ads"
-      soon_badge: "SOON"
+      soon_badge: "Bientôt"
       legal_heading: "Légal"
       privacy: "Confidentialité"
       terms: "CGU"
-      legal_notice: "Mentions Légales"
-      copyright: "© %{year} Spylitic. 100% légal & transparent."
-      crafted_for: "Handcrafted for Growth Marketers."
+      legal_notice: "Mentions légales"
+      copyright: "© %{year} Spylitic. 100 % légal et transparent."
+      crafted_for: "Conçu pour les growth marketers."
 
   landing:
-    page_title: "Spylitic - Understand why ads work"
+    page_title: "Spylitic - Comprenez pourquoi les pubs fonctionnent"
     hero:
-      badge: "Competitive Ad Intelligence powered by IA"
-      title: "Understand"
-      title_highlight: "why ads work."
-      subtitle: "Across Facebook & TikTok — before you spend a dollar. Analyse les publicités de tes concurrents, détecte les CTA, les angles marketing et les patterns gagnants."
-      cta_explore: "Explore ads"
-      cta_early_access: "Request early access"
-      legal: "100% légal"
+      badge: "Intelligence publicitaire compétitive propulsée par l'IA"
+      title: "Comprenez"
+      title_highlight: "pourquoi les pubs fonctionnent."
+      subtitle: "Facebook & TikTok — avant de dépenser un euro. Analysez les publicités de vos concurrents, détectez les CTA, les angles marketing et les patterns gagnants."
+      cta_explore: "Explorer les pubs"
+      cta_early_access: "Demander l'accès anticipé"
+      legal: "100 % légal"
       public_data: "Données publiques"
       no_meta: "Sans connexion Meta"
-      image_alt: "Spylitic Intelligence Dashboard"
+      image_alt: "Tableau de bord Spylitic"
     problem:
       title: "Le problème"
       subtitle: "Aujourd'hui, la plupart des outils vous mentent ou vous noient."
@@ -61,7 +61,7 @@ en:
       intro: "Spylitic est une plateforme d'intelligence publicitaire multi-plateformes. Nous analysons Facebook, Instagram et TikTok pour vous."
       tagline_not_spy: "Pas du \"spy\"."
       tagline_understanding: "De la compréhension stratégique."
-      image_alt: "AI Analysis Engine"
+      image_alt: "Moteur d'analyse IA"
       items:
         - title: "Ce qui est dit"
           description: "Analyse sémantique et textuelle."
@@ -81,7 +81,7 @@ en:
           - "Répartition par pays et langues"
           - "Objectifs (lead, vente, app, trafic)"
       copy_decomposition:
-        title: "Copy Decomposition"
+        title: "Décomposition du copy"
         labels:
           - "Hook"
           - "Problème"
@@ -89,33 +89,33 @@ en:
           - "Preuve"
           - "Call-to-Action"
       ad_angle:
-        title: "Ad Angle Detection"
+        title: "Détection des angles publicitaires"
         angles:
           - "Urgence"
           - "Preuve sociale"
           - "Autorité"
           - "Prix / offre"
       longevity:
-        title: "Ad Longevity Score"
+        title: "Score de longévité"
         description: "Plus une pub dure, plus elle est stratégiquement intéressante."
         short: "7 JOURS"
         long: "90 JOURS +"
     example_insight:
       title: "Exemple d'insight Spylitic"
-      platform_label: "Platform"
+      platform_label: "Plateforme"
       platform_value: "TikTok"
-      ad_score_label: "Ad Score"
+      ad_score_label: "Score pub"
       ad_score_value: "79 / 100"
       angle_label: "Angle dominant :"
       angle_value: "Lifestyle + FOMO"
       cta_label: "CTA :"
-      cta_value: "Shop now"
+      cta_value: "Acheter maintenant"
       ton_label: "Ton :"
       ton_value: "Rapide, émotionnel"
       duration_label: "Durée active :"
       duration_value: "46 jours"
-      conclusion: "Probablement optimisée pour de l'acquisition rapide mobile."
-      image_alt: "Insight Analysis Example"
+      conclusion: "Probablement optimisée pour l'acquisition rapide mobile."
+      image_alt: "Exemple d'analyse d'insight"
     audience:
       title: "Pour qui est Spylitic ?"
       subtitle: "Si tu fais de la publicité sur plusieurs plateformes, Spylitic est pour toi."
@@ -123,18 +123,18 @@ en:
         - "Fondateurs SaaS"
         - "Growth marketers"
         - "Agences marketing"
-        - "Copywriters"
+        - "Rédacteurs"
         - "Marques e-com"
         - "Business World"
     cross_platform:
-      title: "Cross-Platform Insights"
+      title: "Insights multi-plateformes"
       body: "Ce qui marche sur Facebook ≠ TikTok. Spylitic vous aide à adapter vos messages par plateforme en analysant les différences de ton, de rythme et de formats."
       meta_label: "Meta"
       meta_sublabel: "FACEBOOK & INSTA"
       tiktok_label: "TikTok"
       tiktok_sublabel: "MOBILE FIRST"
       legal_badge: "CONFORME"
-      legal_title: "100 % légal & transparent"
+      legal_title: "100 % légal et transparent"
       legal_items:
         - "Données publiques uniquement"
         - "Aucune donnée privée"
@@ -142,11 +142,11 @@ en:
         - "Conforme aux règles Meta & TikTok"
     final_cta:
       title: "Commencez maintenant"
-      subtitle: "Stop guessing. Start understanding ads."
-      box_title: "Join Early Access"
+      subtitle: "Arrêtez de deviner. Comprenez les pubs."
+      box_title: "Rejoindre l'accès anticipé"
       bullets:
         - "Accès anticipé exclusif"
         - "Feedback direct avec l'équipe"
-        - "Pricing préférentiel à vie"
+        - "Tarifs préférentiels à vie"
         - "Influence sur la roadmap"
-      button: "Join early access"
+      button: "Rejoindre l'accès anticipé"

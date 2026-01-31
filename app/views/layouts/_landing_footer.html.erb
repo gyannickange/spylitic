@@ -1,9 +1,9 @@
 <footer class="bg-card-bg border-t border-border-subtle py-20 px-4">
   <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
     <div class="col-span-1 md:col-span-2">
-      <div class="text-2xl font-bold font-heading tracking-tighter text-text-primary mb-6">Spylitic</div>
+      <div class="text-2xl font-bold font-heading tracking-tighter text-text-primary mb-6"><%= t("application_name") %></div>
       <p class="text-text-secondary max-w-sm mb-8">
-        Competitive Ad Intelligence powered by AI. Comprenez enfin pourquoi les publicités de vos concurrents fonctionnent.
+        <%= t("layouts.footer.tagline") %>
       </p>
       <div class="flex space-x-4">
         <%# Social links placeholders %>
@@ -13,25 +13,25 @@
       </div>
     </div>
     <div>
-      <h4 class="font-bold text-text-primary mb-6">Plateformes</h4>
+      <h4 class="font-bold text-text-primary mb-6"><%= t("layouts.footer.platforms_heading") %></h4>
       <ul class="space-y-4 text-text-secondary">
-        <li>Meta Ads</li>
-        <li>TikTok Ads</li>
-        <li>Google Ads <span class="text-[10px] bg-badge-bg text-badge-text px-1.5 py-0.5 rounded ml-1 font-bold">SOON</span></li>
-        <li>Pinterest Ads <span class="text-[10px] bg-badge-bg text-badge-text px-1.5 py-0.5 rounded ml-1 font-bold">SOON</span></li>
+        <li><%= t("layouts.footer.meta_ads") %></li>
+        <li><%= t("layouts.footer.tiktok_ads") %></li>
+        <li><%= t("layouts.footer.google_ads") %> <span class="text-[10px] bg-badge-bg text-badge-text px-1.5 py-0.5 rounded ml-1 font-bold"><%= t("layouts.footer.soon_badge") %></span></li>
+        <li><%= t("layouts.footer.pinterest_ads") %> <span class="text-[10px] bg-badge-bg text-badge-text px-1.5 py-0.5 rounded ml-1 font-bold"><%= t("layouts.footer.soon_badge") %></span></li>
       </ul>
     </div>
     <div>
-      <h4 class="font-bold text-text-primary mb-6">Légal</h4>
+      <h4 class="font-bold text-text-primary mb-6"><%= t("layouts.footer.legal_heading") %></h4>
       <ul class="space-y-4 text-text-secondary">
-        <li>Confidentialité</li>
-        <li>CGU</li>
-        <li>Mentions Légales</li>
+        <li><%= t("layouts.footer.privacy") %></li>
+        <li><%= t("layouts.footer.terms") %></li>
+        <li><%= t("layouts.footer.legal_notice") %></li>
       </ul>
     </div>
   </div>
   <div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-border-subtle flex flex-col md:flex-row justify-between items-center text-sm text-text-muted">
-    <p>&copy; <%= Time.now.year %> Spylitic. 100% légal & transparent.</p>
-    <p>Handcrafted for Growth Marketers.</p>
+    <p><%= t("layouts.footer.copyright", year: Time.now.year) %></p>
+    <p><%= t("layouts.footer.crafted_for") %></p>
   </div>
 </footer>
