@@ -1,1 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap");
+
+@config "../../../config/tailwind.config.js";
 @import "tailwindcss";
+
+/* ==========================================================================
+   Spylitic Theme - CSS Custom Properties
+   Light theme: :root
+   Dark theme: .dark
+   ========================================================================== */
+
+/* Light Theme (default) */
+:root {
+  /* Backgrounds */
+  --color-app-bg: #f8fafc;
+  --color-hero-bg: #eef2ff;
+  --color-card-bg: #ffffff;
+  --color-surface-subtle: #f1f5f9;
+
+  /* Text */
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #475569;
+  --color-text-muted: #64748b;
+
+  /* Actions & Accents */
+  --color-cta: #3b82f6;
+  --color-cta-hover: #2563eb;
+  --color-link: #2563eb;
+  --color-focus-ring: #93c5fd;
+
+  /* Insights / Badges (cyan for insights, never dominant) */
+  --color-badge-bg: rgba(34, 211, 238, 0.18);
+  --color-badge-text: #0891b2;
+  --color-badge-hover: rgba(34, 211, 238, 0.1);
+
+  /* Borders */
+  --color-border-default: #e2e8f0;
+  --color-border-strong: #cbd5e1;
+  --color-border-subtle: #e2e8f0;
+
+  /* States */
+  --color-success: #16a34a;
+  --color-warning: #d97706;
+  --color-error: #dc2626;
+  --color-info: #0284c7;
+}
+
+/* Dark Theme */
+.dark {
+  /* Backgrounds */
+  --color-app-bg: #0f172a;
+  --color-hero-bg: #1e1b4b;
+  --color-card-bg: #020617;
+  --color-surface-subtle: #020617;
+
+  /* Text */
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #cbd5e1;
+  --color-text-muted: #94a3b8;
+
+  /* Actions & Accents (same primary accent in both themes) */
+  --color-cta: #3b82f6;
+  --color-cta-hover: #2563eb;
+  --color-link: #3b82f6;
+  --color-focus-ring: #60a5fa;
+
+  /* Insights / Badges (cyan for insights, never dominant) */
+  --color-badge-bg: rgba(34, 211, 238, 0.15);
+  --color-badge-text: #22d3ee;
+  --color-badge-hover: rgba(34, 211, 238, 0.08);
+
+  /* Borders */
+  --color-border-default: #1e293b;
+  --color-border-strong: #334155;
+  --color-border-subtle: #1e293b;
+
+  /* States */
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #38bdf8;
+}
