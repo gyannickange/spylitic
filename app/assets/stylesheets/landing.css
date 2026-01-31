@@ -4,9 +4,18 @@
 
 :root {
   --nav-height: 80px;
-  --glass-bg: rgba(15, 23, 42, 0.7);
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.3);
+  --glass-border-highlight: rgba(255, 255, 255, 0.6);
+  --glass-glow: rgba(255, 255, 255, 0.1);
+  --glow-primary: rgba(59, 130, 246, 0.3);
+}
+
+.dark {
+  --glass-bg: rgba(15, 23, 42, 0.4);
   --glass-border: rgba(255, 255, 255, 0.1);
-  --glow-primary: rgba(59, 130, 246, 0.4);
+  --glass-border-highlight: rgba(255, 255, 255, 0.2);
+  --glass-glow: rgba(255, 255, 255, 0.05);
 }
 
 .dark main {
@@ -22,11 +31,16 @@
 }
 
 .glass-card {
-  background: rgba(30, 41, 59, 0.4);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border: 1px solid var(--glass-border);
-  transition: all 0.3s ease;
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-border-highlight),
+    inset 0 0 0 1px var(--glass-glow),
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .glass-card:hover {
@@ -50,9 +64,17 @@
 
 /* Animations */
 @keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .animate-float {
@@ -60,8 +82,17 @@
 }
 
 @keyframes pulse-glow {
-  0%, 100% { opacity: 0.5; transform: scale(1); }
-  50% { opacity: 0.8; transform: scale(1.1); }
+
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
 }
 
 .glow-bg {
@@ -112,7 +143,9 @@ section {
 }
 
 @keyframes rotate {
-  100% { transform: rotate(360deg); }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Longevity Score Visual */
@@ -123,8 +156,18 @@ section {
   position: relative;
 }
 
-.score-fill {
-  height: 100%;
-  background: linear-gradient(90deg, #3B82F6, #2DD4BF);
-  border-radius: 4px;
+/* Glass Button Effect */
+.btn-glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--glass-border);
+  box-shadow: inset 0 1px 1px var(--glass-border-light);
+  transition: all 0.3s ease;
+}
+
+.btn-glass:hover {
+  background: var(--glass-border);
+  border-color: var(--glass-border-light);
+  transform: translateY(-1px);
 }
