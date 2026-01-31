@@ -150,3 +150,18 @@ en:
         - "Flexible pricing for early adopters"
         - "Influence the roadmap"
       button: "Request early access"
+    faq:
+      title: "FAQ — Spylitic"
+      items:
+        - question: "What exactly is Spylitic?"
+          answer: "Spylitic is an ad intelligence platform that analyzes public ads on Facebook, Instagram, and TikTok. It helps you understand why certain ads work: CTA, angles, message structure, tone, and run duration — explained by AI."
+        - question: "Is Spylitic an “Ad Spy” tool?"
+          answer: "No. Spylitic does not just list ads. It turns public ads into clear, actionable insights built for founders, agencies, and marketers."
+        - question: "Which platforms are supported?"
+          answer: "Currently: Facebook, Instagram, and TikTok. More platforms (Google, Pinterest, YouTube Ads) are on the roadmap."
+        - question: "Where does the analyzed data come from?"
+          answer: "Spylitic uses only public data from official libraries and legally accessible sources. No private or confidential data is used."
+        - question: "Is it legal to use Spylitic?"
+          answer: "Yes. Spylitic strictly follows Meta and TikTok rules: no access to ad accounts, no personal data, no prohibited scraping."
+        - question: "Who is Spylitic for?"
+          answer: "Spylitic is built for SaaS founders, marketing agencies, growth marketers, copywriters and media buyers, and ecommerce or mobile brands. If you want to understand before you spend, Spylitic is for you."
