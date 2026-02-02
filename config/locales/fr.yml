@@ -57,6 +57,7 @@ fr:
         - title: "Marchés ignorés"
           description: "Afrique et LATAM sont souvent absents des analyses."
     solution:
+      badge: "NOTRE APPROCHE"
       title: "La solution : Spylitic"
       intro: "Spylitic est une plateforme d'intelligence publicitaire qui explique pourquoi les pubs fonctionnent, par marché et par industrie."
       tagline_not_spy: "Pas un Ad Spy."
@@ -81,6 +82,7 @@ fr:
           - "Comparaison par pays et langues"
           - "Intentions CTA (lead, vente, app, trafic)"
       copy_decomposition:
+        badge: "Traitement du langage naturel"
         title: "Copy Decomposition"
         labels:
           - "Hook"
@@ -150,8 +152,13 @@ fr:
         - "Tarifs flexibles pour les early adopters"
         - "Influence sur la roadmap"
       button: "Demander l'accès"
+      badge: "Lancement Imminent"
+      no_commitment: "Sans engagement"
+      no_card: "Sans carte requise"
     faq:
       title: "FAQ — Spylitic"
+      contact_text: "Ou contactez notre équipe pour obtenir des réponses personnalisées."
+      contact_button: "J'ai une question"
       items:
         - question: "Qu’est-ce que Spylitic exactement ?"
           answer: "Spylitic est une plateforme d’intelligence publicitaire qui analyse les publicités publiques diffusées sur Facebook, Instagram et TikTok. Elle t’aide à comprendre pourquoi certaines publicités fonctionnent : CTA, angles marketing, structure du message, ton et durée de diffusion — expliqués par l’IA."

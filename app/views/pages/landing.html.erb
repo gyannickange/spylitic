@@ -158,7 +158,7 @@
     <div class="flex flex-col lg:flex-row items-center gap-20">
       <div class="lg:w-1/2">
         <div class="inline-flex items-center px-4 py-1.5 rounded-full border border-cta/20 bg-cta/5 text-[10px] font-bold text-cta uppercase tracking-widest mb-8">
-          NOTRE APPROCHE
+          <%= t("landing.solution.badge") %>
         </div>
         <h2 class="text-4xl md:text-5xl font-bold font-heading text-text-primary mb-8 tracking-tight"><%= t("landing.solution.title") %></h2>
         <p class="text-xl text-text-secondary mb-12 leading-relaxed opacity-90">
@@ -200,7 +200,7 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
     <div class="text-center mb-28">
       <div class="inline-flex items-center px-4 py-1.5 rounded-full border border-cta/20 bg-cta/5 text-[10px] font-bold text-cta uppercase tracking-[0.2em] mb-6">
-        Capabilities IA
+        <%= t("landing.features.badge") %>
       </div>
       <h2 class="text-4xl md:text-5xl font-bold font-heading text-text-primary mb-6 tracking-tight"><%= t("landing.features.title") %></h2>
       <p class="text-xl text-text-secondary max-w-2xl mx-auto leading-relaxed"><%= t("landing.features.subtitle") %></p>
@@ -217,8 +217,8 @@
               <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"/></svg>
             </div>
             <div class="flex flex-col items-end">
-              <span class="feature-badge text-cta mb-2">Module IA Expert</span>
-              <span class="text-[10px] text-text-muted font-mono">STATUS: SCANNING...</span>
+              <span class="feature-badge text-cta mb-2"><%= t("landing.features.cta_intelligence.badge") %></span>
+              <span class="text-[10px] text-text-muted font-mono"><%= t("landing.features.cta_intelligence.status") %></span>
             </div>
           </div>
           <h3 class="text-3xl font-bold text-text-primary mb-8 tracking-tight"><%= t("landing.features.cta_intelligence.title") %></h3>
@@ -244,7 +244,7 @@
             <div class="w-20 h-20 bg-cta/10 text-cta rounded-3xl flex items-center justify-center group-hover:bg-cta group-hover:text-white transition-all duration-700 shadow-2xl shadow-cta/20">
               <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16m-7 6h7"/></svg>
             </div>
-            <span class="feature-badge text-cta">Natural Language Processing</span>
+            <span class="feature-badge text-cta"><%= t("landing.features.copy_decomposition.badge") %></span>
           </div>
           <h3 class="text-3xl font-bold text-text-primary mb-8 tracking-tight"><%= t("landing.features.copy_decomposition.title") %></h3>
           <div class="flex flex-wrap gap-4 mb-2">
@@ -441,11 +441,11 @@
             </div>
           </div>
           <p class="text-text-primary font-bold text-lg">
-            Ou contactez notre équipe pour obtenir des réponses personnalisées.
+            <%= t("landing.faq.contact_text") %>
           </p>
         </div>
         <a href="mailto:support@spylitic.com" class="btn-contact-dark whitespace-nowrap">
-          J'ai une question
+          <%= t("landing.faq.contact_button") %>
         </a>
       </div>
     </div>
@@ -474,7 +474,7 @@
     
     <div class="max-w-5xl mx-auto px-4 text-center relative z-10">
       <div class="inline-flex items-center px-4 py-2 rounded-full border border-cta/20 bg-cta/5 text-xs font-bold text-cta uppercase tracking-[0.3em] mb-10">
-        Lancement Imminent
+        <%= t("landing.final_cta.badge") %>
       </div>
       
       <h2 class="text-4xl md:text-6xl font-bold font-heading mb-8 tracking-tighter text-text-primary">
@@ -504,11 +504,11 @@
             <div class="mt-8 flex items-center gap-6 opacity-60">
               <div class="flex items-center gap-2">
                 <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                <span class="text-sm font-bold text-text-primary uppercase tracking-widest">Sans engagement</span>
+                <span class="text-sm font-bold text-text-primary uppercase tracking-widest"><%= t("landing.final_cta.no_commitment") %></span>
               </div>
               <div class="flex items-center gap-2">
                 <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                <span class="text-sm font-bold text-text-primary uppercase tracking-widest">No Card Required</span>
+                <span class="text-sm font-bold text-text-primary uppercase tracking-widest"><%= t("landing.final_cta.no_card") %></span>
               </div>
             </div>
           </div>

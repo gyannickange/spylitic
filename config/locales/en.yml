@@ -57,6 +57,7 @@ en:
         - title: "Missing markets"
           description: "Emerging markets like Africa and LATAM are ignored."
     solution:
+      badge: "OUR APPROACH"
       title: "The solution: Spylitic"
       intro: "Spylitic is a competitive ad intelligence platform that explains why ads work across markets and industries."
       tagline_not_spy: "Not an Ad Spy."
@@ -81,6 +82,7 @@ en:
           - "Compare CTA performance by country and language"
           - "Map CTA intent (lead, sale, app, traffic)"
       copy_decomposition:
+        badge: "Natural Language Processing"
         title: "Copy Decomposition"
         labels:
           - "Hook"
@@ -150,8 +152,13 @@ en:
         - "Flexible pricing for early adopters"
         - "Influence the roadmap"
       button: "Request early access"
+      badge: "Launching Soon"
+      no_commitment: "No commitment"
+      no_card: "No card required"
     faq:
       title: "FAQ — Spylitic"
+      contact_text: "Or contact our team for personalized answers."
+      contact_button: "I have a question"
       items:
         - question: "What exactly is Spylitic?"
           answer: "Spylitic is an ad intelligence platform that analyzes public ads on Facebook, Instagram, and TikTok. It helps you understand why certain ads work: CTA, angles, message structure, tone, and run duration — explained by AI."
