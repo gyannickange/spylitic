@@ -429,15 +429,19 @@
         <% end %>
       </div>
 
-      <%# Contact Bar %>
+      <%# Contact Bar — inline SVG avatars (no external dependency), decorative %>
       <div class="mt-6 p-6 glass-card rounded-[32px] flex flex-col md:flex-row items-center justify-between gap-8 border-white/5">
         <div class="flex items-center gap-6">
-          <div class="avatar-group">
-            <div class="avatar-item"><img src="https://i.pravatar.cc/100?u=1" alt="Support 1"></div>
-            <div class="avatar-item"><img src="https://i.pravatar.cc/100?u=2" alt="Support 2"></div>
-            <div class="avatar-item relative">
-              <img src="https://i.pravatar.cc/100?u=3" alt="Support 3">
-              <span class="absolute bottom-0.5 right-0.5 w-3.5 h-3.5 bg-success border-2 border-[#1E293B] rounded-full"></span>
+          <div class="avatar-group" aria-hidden="true">
+            <div class="avatar-item avatar-svg">
+              <svg class="w-full h-full" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><circle cx="50" cy="38" r="18"/><path d="M24 92c0-20 12-30 26-30s26 10 26 30H24z"/></svg>
+            </div>
+            <div class="avatar-item avatar-svg">
+              <svg class="w-full h-full" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><circle cx="50" cy="38" r="18"/><path d="M24 92c0-20 12-30 26-30s26 10 26 30H24z"/></svg>
+            </div>
+            <div class="avatar-item avatar-svg relative">
+              <svg class="w-full h-full" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><circle cx="50" cy="38" r="18"/><path d="M24 92c0-20 12-30 26-30s26 10 26 30H24z"/></svg>
+              <span class="absolute bottom-0.5 right-0.5 w-3.5 h-3.5 bg-success border-2 border-[#1E293B] rounded-full" aria-hidden="true"></span>
             </div>
           </div>
           <p class="text-text-primary font-bold text-lg">
