@@ -73,9 +73,12 @@ fr:
         - title: "Comment agir"
           description: "Transformez les insights en stratégie."
     features:
+      badge: "FONCTIONNALITÉS"
       title: "Ce que Spylitic analyse"
       subtitle: "Une IA explicable qui décompose chaque pub comme un stratège."
       cta_intelligence:
+        badge: "CTA"
+        status: "Disponible"
         title: "CTA Intelligence"
         list:
           - "Détection des CTA par industrie"

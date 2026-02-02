@@ -73,9 +73,12 @@ en:
         - title: "How to act"
           description: "Turn learnings into strategy, not guesswork."
     features:
+      badge: "FEATURES"
       title: "What Spylitic analyzes"
       subtitle: "Explainable AI breaks down each ad like a strategist."
       cta_intelligence:
+        badge: "CTA"
+        status: "Live"
         title: "CTA Intelligence"
         list:
           - "Detect CTA usage across industries"
