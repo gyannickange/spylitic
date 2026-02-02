@@ -23,5 +23,9 @@ module Spylitic
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    # Default locale: French
+    config.i18n.default_locale = :fr
+    config.i18n.fallbacks = [ :fr, :en ]
   end
 end

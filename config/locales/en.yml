@@ -1,31 +1,177 @@
-# Files in the config/locales directory are used for internationalization and
-# are automatically loaded by Rails. If you want to use locales other than
-# English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t "hello"
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t("hello") %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more about the API, please read the Rails Internationalization guide
-# at https://guides.rubyonrails.org/i18n.html.
-#
-# Be aware that YAML interprets the following case-insensitive strings as
-# booleans: `true`, `false`, `on`, `off`, `yes`, `no`. Therefore, these strings
-# must be quoted to be interpreted as strings. For example:
-#
-#     en:
-#       "yes": yup
-#       enabled: "ON"
+# Rails I18n: https://guides.rubyonrails.org/i18n.html
+# In views: <%= t("key") %> or <%= t("scope.key") %>
 
 en:
-  hello: "Hello world"
+  application_name: "Spylitic"
+
+  layouts:
+    landing:
+      title: "Spylitic - Competitive Ad Intelligence, explained by AI"
+      meta_description: "Explainable Ad Intelligence for global markets. Understand why ads work before you spend a dollar."
+    navbar:
+      problem: "Problem"
+      solution: "Solution"
+      features: "Features"
+      audience: "Who is it for?"
+      explore_ads: "Explore ads"
+      join_early_access: "Join early access"
+    footer:
+      tagline: "Competitive Ad Intelligence, explained by AI. Understand why competitor ads work."
+      platforms_heading: "Platforms"
+      meta_ads: "Meta Ads"
+      tiktok_ads: "TikTok Ads"
+      google_ads: "Google Ads"
+      pinterest_ads: "Pinterest Ads"
+      soon_badge: "SOON"
+      legal_heading: "Legal"
+      privacy: "Privacy"
+      terms: "Terms"
+      legal_notice: "Legal Notice"
+      copyright: "© %{year} Spylitic. 100% legal & transparent."
+      crafted_for: "Handcrafted for Growth Marketers."
+
+  landing:
+    page_title: "Spylitic - Competitive Ad Intelligence, explained by AI"
+    hero:
+      badge: "Competitive Ad Intelligence, explained by AI"
+      title: "Understand"
+      title_highlight: "why ads work — explained by AI."
+      subtitle: "Explain why competitor ads work with transparent AI analysis across Meta, TikTok, and emerging markets. Detect CTAs, angles, and repeatable patterns."
+      cta_explore: "Explore ads"
+      cta_early_access: "Request early access"
+      legal: "100% legal"
+      public_data: "Public data"
+      no_meta: "No Meta connection"
+      image_alt: "Spylitic Intelligence Dashboard"
+    problem:
+      title: "The problem"
+      subtitle: "Most tools show volume, not understanding."
+      result: "Result: you spend ad budget blindly and miss the why."
+      items:
+        - title: "Opaque scoring"
+          description: "Scores are hidden or black-boxed, so you cannot trust decisions."
+        - title: "No explanation"
+          description: "You see ads but never the copy logic, CTA, or angle behind them."
+        - title: "Dropshipping bias"
+          description: "Most databases are tuned for product hunters, not SaaS or services."
+        - title: "Missing markets"
+          description: "Emerging markets like Africa and LATAM are ignored."
+    solution:
+      badge: "OUR APPROACH"
+      title: "The solution: Spylitic"
+      intro: "Spylitic is a competitive ad intelligence platform that explains why ads work across markets and industries."
+      tagline_not_spy: "Not an Ad Spy."
+      tagline_understanding: "Explainable competitive intelligence."
+      image_alt: "AI Analysis Engine"
+      items:
+        - title: "What works"
+          description: "Identify the strongest hooks, CTAs, and formats."
+        - title: "Why it works"
+          description: "Transparent AI explains the logic behind performance."
+        - title: "Where it works"
+          description: "Geo and audience insights by country and niche."
+        - title: "How to act"
+          description: "Turn learnings into strategy, not guesswork."
+    features:
+      badge: "FEATURES"
+      title: "What Spylitic analyzes"
+      subtitle: "Explainable AI breaks down each ad like a strategist."
+      cta_intelligence:
+        badge: "CTA"
+        status: "Live"
+        title: "CTA Intelligence"
+        list:
+          - "Detect CTA usage across industries"
+          - "Compare CTA performance by country and language"
+          - "Map CTA intent (lead, sale, app, traffic)"
+      copy_decomposition:
+        badge: "Natural Language Processing"
+        title: "Copy Decomposition"
+        labels:
+          - "Hook"
+          - "Problem"
+          - "Promise"
+          - "Proof"
+          - "Call-to-Action"
+      ad_angle:
+        title: "Ad Angle Detection"
+        angles:
+          - "Urgency"
+          - "Social proof"
+          - "Fear"
+          - "Authority"
+      longevity:
+        title: "Ad Longevity Score"
+        description: "If an ad runs for 90 days, it is not luck. It is signal."
+        short: "7 DAYS"
+        long: "90 DAYS +"
+    example_insight:
+      title: "Spylitic insight example"
+      platform_label: "Platform"
+      platform_value: "TikTok"
+      ad_score_label: "Ad Score"
+      ad_score_value: "79 / 100"
+      angle_label: "Primary angle:"
+      angle_value: "Authority + Proof"
+      cta_label: "CTA:"
+      cta_value: "Book a demo"
+      ton_label: "Tone:"
+      ton_value: "Direct, credible"
+      duration_label: "Active duration:"
+      duration_value: "92 days"
+      conclusion: "Long-lived ad suggests a scalable positioning in B2B fintech."
+      image_alt: "Insight Analysis Example"
+    audience:
+      title: "Who is Spylitic for?"
+      subtitle: "Built for serious marketers, not product hunters."
+      items:
+        - "SaaS founders"
+        - "Marketing agencies"
+        - "Growth marketers"
+        - "Fintech / Edtech / Ecommerce"
+        - "Local brands in Africa, Europe, LATAM"
+        - "Freelance ads & copywriters"
+    cross_platform:
+      title: "Geo Ad Insight"
+      body: "What works in Nigeria is not what works in France or the US. Spylitic compares tone, format, and CTA patterns across markets."
+      meta_label: "Meta"
+      meta_sublabel: "FACEBOOK & INSTA"
+      tiktok_label: "TikTok"
+      tiktok_sublabel: "MOBILE FIRST"
+      legal_badge: "COMPLIANT"
+      legal_title: "100% legal & transparent"
+      legal_items:
+        - "Public data only"
+        - "No private data"
+        - "No connection to ad accounts"
+        - "Compliant with Meta & TikTok rules"
+    final_cta:
+      title: "Start with clarity"
+      subtitle: "Competitive Ad Intelligence, explained by AI."
+      box_title: "Get early access"
+      bullets:
+        - "Priority early access"
+        - "Direct feedback loop with the team"
+        - "Flexible pricing for early adopters"
+        - "Influence the roadmap"
+      button: "Request early access"
+      badge: "Launching Soon"
+      no_commitment: "No commitment"
+      no_card: "No card required"
+    faq:
+      title: "FAQ — Spylitic"
+      contact_text: "Or contact our team for personalized answers."
+      contact_button: "I have a question"
+      items:
+        - question: "What exactly is Spylitic?"
+          answer: "Spylitic is an ad intelligence platform that analyzes public ads on Facebook, Instagram, and TikTok. It helps you understand why certain ads work: CTA, angles, message structure, tone, and run duration — explained by AI."
+        - question: "Is Spylitic an “Ad Spy” tool?"
+          answer: "No. Spylitic does not just list ads. It turns public ads into clear, actionable insights built for founders, agencies, and marketers."
+        - question: "Which platforms are supported?"
+          answer: "Currently: Facebook, Instagram, and TikTok. More platforms (Google, Pinterest, YouTube Ads) are on the roadmap."
+        - question: "Where does the analyzed data come from?"
+          answer: "Spylitic uses only public data from official libraries and legally accessible sources. No private or confidential data is used."
+        - question: "Is it legal to use Spylitic?"
+          answer: "Yes. Spylitic strictly follows Meta and TikTok rules: no access to ad accounts, no personal data, no prohibited scraping."
+        - question: "Who is Spylitic for?"
+          answer: "Spylitic is built for SaaS founders, marketing agencies, growth marketers, copywriters and media buyers, and ecommerce or mobile brands. If you want to understand before you spend, Spylitic is for you."

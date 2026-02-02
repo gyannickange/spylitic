@@ -1,0 +1,523 @@
+<% content_for :title, t("landing.page_title") %>
+
+<%# Hero Section #4: The Platform Stack %>
+<section class="hero-content hero-proposition-4 relative overflow-hidden min-h-[95vh] flex items-center">
+  <div class="hero-grid"></div>
+  <div class="hero-glow-main !left-1/3 opacity-30"></div>
+  
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+    <div class="flex flex-col lg:flex-row items-center gap-24">
+      <div class="lg:w-[55%]">
+        <h1 class="text-4xl md:text-6xl font-black font-heading leading-[1.05] mb-8 tracking-tight text-text-primary">
+          <%= t("landing.hero.title") %><br/>
+          <span class="shimmer-text">
+            <%= t("landing.hero.title_highlight") %>
+          </span>
+        </h1>
+        
+        <p class="text-lg md:text-xl text-text-secondary leading-relaxed mb-12 font-medium opacity-80">
+          <%= t("landing.hero.subtitle") %>
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center gap-6 mb-16">
+          <a href="#" class="btn-shimmer inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-bold rounded-2xl text-white bg-cta hover:bg-cta-hover transition-all shadow-xl shadow-cta/40 hover:scale-105 active:scale-95 w-full sm:w-auto">
+            <%= t("landing.hero.cta_explore") %>
+            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+          </a>
+          <a href="#" class="btn-glass inline-flex items-center justify-center px-8 py-4 text-lg font-bold rounded-2xl text-text-primary hover:border-white/20 transition-all w-full sm:w-auto">
+            <%= t("landing.hero.cta_early_access") %>
+          </a>
+        </div>
+
+        <div class="flex items-center gap-10 opacity-30">
+          <div class="flex flex-col">
+            <span class="text-3xl font-black text-text-primary">99%</span>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-text-muted">Legal Compliance</span>
+          </div>
+          <div class="w-px h-10 bg-white/10"></div>
+          <div class="flex flex-col">
+            <span class="text-3xl font-black text-text-primary">1M+</span>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-text-muted">Analyzed Ads</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:w-[45%]">
+        <div class="platform-stack">
+          <%# Meta Card %>
+          <div class="stack-card stack-card-1">
+             <div class="flex items-center justify-between mb-6">
+               <div class="flex items-center gap-3">
+                 <div class="w-10 h-10 bg-[#1877F2]/20 rounded-xl flex items-center justify-center text-[#1877F2]">
+                   <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.248h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                 </div>
+                 <span class="font-bold text-text-primary">Meta Analysis</span>
+               </div>
+               <span class="text-[10px] font-bold text-cta bg-cta/10 px-2 py-1 rounded">LIVE</span>
+             </div>
+             <div class="space-y-4">
+               <div class="h-2 w-full bg-white/5 rounded-full overflow-hidden">
+                 <div class="h-full bg-[#1877F2] w-[75%]"></div>
+               </div>
+               <div class="flex justify-between items-center text-xs text-text-muted font-bold">
+                 <span>WINNING PATTERN</span>
+                 <span class="text-success">+18% CONV</span>
+               </div>
+             </div>
+          </div>
+
+          <%# TikTok Card %>
+          <div class="stack-card stack-card-2">
+             <div class="flex items-center justify-between mb-6">
+               <div class="flex items-center gap-3">
+                 <div class="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center text-white">
+                   <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.03 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.28-2.26.74-4.57 2.57-5.98 1.14-.85 2.54-1.3 3.94-1.31.02 1.34s0 2.68.01 4.02c-.89-.03-1.81.25-2.5.83-.69.59-1.07 1.5-1.02 2.4.03.89.54 1.71 1.28 2.19.78.49 1.74.65 2.62.43.91-.22 1.74-.83 2.15-1.67.42-.8.5-1.74.49-2.65.01-6.19-.01-12.38.02-18.57z"/></svg>
+                 </div>
+                 <span class="font-bold text-text-primary">TikTok Trends</span>
+               </div>
+             </div>
+             <div class="grid grid-cols-2 gap-3">
+               <div class="bg-white/5 rounded-2xl p-4 border border-white/5">
+                 <div class="text-[10px] text-text-muted mb-1">AUDIENCE</div>
+                 <div class="font-bold">GEN-Z</div>
+               </div>
+               <div class="bg-white/5 rounded-2xl p-4 border border-white/5">
+                 <div class="text-[10px] text-text-muted mb-1">TONE</div>
+                 <div class="font-bold">RAW</div>
+               </div>
+             </div>
+          </div>
+
+          <%# Instagram Card %>
+          <div class="stack-card stack-card-3">
+             <div class="flex items-center gap-3 mb-6">
+               <div class="w-10 h-10 bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] rounded-xl flex items-center justify-center text-white">
+                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.14 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+               </div>
+               <span class="font-bold text-text-primary">Insta Insights</span>
+             </div>
+             <div class="flex items-center gap-4">
+               <div class="flex-1 h-3 bg-white/5 rounded-full overflow-hidden">
+                 <div class="h-full bg-gradient-to-r from-[#f9ce34] to-[#ee2a7b] w-[90%]"></div>
+               </div>
+               <span class="text-xs font-bold font-mono">90%</span>
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%# Le Problème Section %>
+<section id="problem" class="relative py-32 overflow-hidden">
+  <div class="glow-bg w-[400px] h-[400px] bg-error top-[20%] left-[-100px] opacity-10"></div>
+  
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="text-center mb-24">
+      <h2 class="text-4xl md:text-5xl font-bold font-heading text-text-primary mb-6"><%= t("landing.problem.title") %></h2>
+      <p class="text-xl text-text-secondary max-w-2xl mx-auto"><%= t("landing.problem.subtitle") %></p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <% 
+        problem_icons = [
+          '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 3l18 18"/></svg>', # Pas de contexte
+          '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 002 2h2a2 2 0 002-2"/></svg>', # Winners flous
+          '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>', # Silo plateformes
+          '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 1.343-3 3s1.343 3 3 3 3-1.343 3-3-1.343-3-3-3z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 3l18 18"/></svg>' # Dépenses aveugles
+        ]
+      %>
+      <% t("landing.problem.items").each_with_index do |item, index| %>
+        <div class="glass-card p-10 rounded-[32px] group hover:border-error/40 transition-all duration-500">
+          <div class="w-14 h-14 bg-error/10 text-error rounded-2xl flex items-center justify-center mb-8 group-hover:bg-error group-hover:text-white transition-all duration-500 shadow-lg shadow-error/10">
+            <%= problem_icons[index].html_safe %>
+          </div>
+          <h3 class="text-xl font-bold text-text-primary mb-4 group-hover:text-error transition-colors duration-300"><%= item[:title] %></h3>
+          <p class="text-text-secondary leading-relaxed"><%= item[:description] %></p>
+        </div>
+      <% end %>
+    </div>
+    
+    <div class="mt-24 text-center">
+      <div class="inline-block p-1 rounded-full bg-gradient-to-r from-error/40 to-transparent">
+        <div class="px-8 py-3 rounded-full bg-card-bg">
+          <p class="text-xl md:text-2xl font-bold text-text-primary italic">
+            👉 <%= t("landing.problem.result") %>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%# La Solution Section %>
+<section id="solution" class="relative py-32 overflow-hidden">
+  <div class="glow-bg w-[500px] h-[500px] bg-cta top-1/2 left-[-200px] opacity-10"></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="flex flex-col lg:flex-row items-center gap-20">
+      <div class="lg:w-1/2">
+        <div class="inline-flex items-center px-4 py-1.5 rounded-full border border-cta/20 bg-cta/5 text-[10px] font-bold text-cta uppercase tracking-widest mb-8">
+          <%= t("landing.solution.badge") %>
+        </div>
+        <h2 class="text-4xl md:text-5xl font-bold font-heading text-text-primary mb-8 tracking-tight"><%= t("landing.solution.title") %></h2>
+        <p class="text-xl text-text-secondary mb-12 leading-relaxed opacity-90">
+          <%= t("landing.solution.intro") %>
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
+          <% t("landing.solution.items").each do |item| %>
+            <div class="p-6 rounded-3xl bg-white/5 border border-white/5 hover:border-cta/20 transition-all group">
+              <div class="w-10 h-10 rounded-xl bg-cta/10 text-cta flex items-center justify-center mb-4 group-hover:bg-cta group-hover:text-white transition-all">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              </div>
+              <h4 class="font-bold text-text-primary mb-2"><%= item[:title] %></h4>
+              <p class="text-sm text-text-secondary leading-relaxed opacity-80"><%= item[:description] %></p>
+            </div>
+          <% end %>
+        </div>
+
+        <div class="p-8 rounded-3xl bg-cta/5 border border-cta/20 backdrop-blur-sm">
+          <p class="text-lg font-bold text-text-primary flex items-center gap-3">
+            <svg class="w-6 h-6 text-cta" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            <span><%= t("landing.solution.tagline_not_spy") %> <span class="text-gradient-primary uppercase tracking-wider"><%= t("landing.solution.tagline_understanding") %></span></span>
+          </p>
+        </div>
+      </div>
+      <div class="lg:w-1/2 relative group">
+        <div class="absolute -inset-4 bg-cta/20 blur-3xl rounded-full opacity-20 group-hover:opacity-40 transition-opacity"></div>
+        <div class="relative glass-card p-4 rounded-[40px] border-white/10">
+          <img src="/ai_analysis_visualization_png_1769826410997.png" alt="<%= t("landing.solution.image_alt") %>" class="w-full h-auto rounded-[28px] shadow-2xl">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%# IA Analysis Features Section %>
+<section id="features" class="relative py-32 overflow-hidden">
+  <div class="bg-ornament opacity-20"></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="text-center mb-28">
+      <div class="inline-flex items-center px-4 py-1.5 rounded-full border border-cta/20 bg-cta/5 text-[10px] font-bold text-cta uppercase tracking-[0.2em] mb-6">
+        <%= t("landing.features.badge") %>
+      </div>
+      <h2 class="text-4xl md:text-5xl font-bold font-heading text-text-primary mb-6 tracking-tight"><%= t("landing.features.title") %></h2>
+      <p class="text-xl text-text-secondary max-w-2xl mx-auto leading-relaxed"><%= t("landing.features.subtitle") %></p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+      <!-- Feature 1: CTA Intelligence -->
+      <div class="feature-card glass-card p-8 rounded-[48px] group">
+        <div class="feature-card-glow"></div>
+        <div class="feature-grid-pattern"></div>
+        <div class="relative z-10">
+          <div class="flex items-center justify-between mb-12">
+            <div class="w-20 h-20 bg-cta/10 text-cta rounded-3xl flex items-center justify-center group-hover:bg-cta group-hover:text-white transition-all duration-700 shadow-2xl shadow-cta/20">
+              <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"/></svg>
+            </div>
+            <div class="flex flex-col items-end">
+              <span class="feature-badge text-cta mb-2"><%= t("landing.features.cta_intelligence.badge") %></span>
+              <span class="text-[10px] text-text-muted font-mono"><%= t("landing.features.cta_intelligence.status") %></span>
+            </div>
+          </div>
+          <h3 class="text-3xl font-bold text-text-primary mb-8 tracking-tight"><%= t("landing.features.cta_intelligence.title") %></h3>
+          <div class="bg-black/20 backdrop-blur-md rounded-3xl p-8 border border-white/5">
+            <ul class="space-y-5">
+              <% t("landing.features.cta_intelligence.list").each do |line| %>
+                <li class="flex items-center text-text-secondary font-medium">
+                  <div class="w-2 h-2 rounded-full bg-cta mr-4 shadow-[0_0_10px_var(--color-cta)]"></div>
+                  <span><%= line %></span>
+                </li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 2: Copy Decomposition -->
+      <div class="feature-card glass-card p-8 rounded-[48px] group">
+        <div class="feature-card-glow"></div>
+        <div class="feature-grid-pattern"></div>
+        <div class="relative z-10">
+          <div class="flex items-center justify-between mb-12">
+            <div class="w-20 h-20 bg-cta/10 text-cta rounded-3xl flex items-center justify-center group-hover:bg-cta group-hover:text-white transition-all duration-700 shadow-2xl shadow-cta/20">
+              <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+            </div>
+            <span class="feature-badge text-cta"><%= t("landing.features.copy_decomposition.badge") %></span>
+          </div>
+          <h3 class="text-3xl font-bold text-text-primary mb-8 tracking-tight"><%= t("landing.features.copy_decomposition.title") %></h3>
+          <div class="flex flex-wrap gap-4 mb-2">
+            <% t("landing.features.copy_decomposition.labels").each_with_index do |label, idx| %>
+              <div class="feature-tag text-cta flex items-center gap-3 py-3 px-5 bg-cta/5 hover:bg-cta/10 transition-colors border-white/10">
+                <span class="text-[10px] font-mono opacity-50">0<%= idx + 1 %></span>
+                <span class="font-bold"><%= label %></span>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 3: Ad Angle -->
+      <div class="feature-card glass-card p-8 rounded-[48px] group">
+        <div class="feature-card-glow"></div>
+        <div class="feature-grid-pattern"></div>
+        <div class="relative z-10">
+          <div class="flex items-center justify-between mb-12">
+            <div class="w-20 h-20 bg-cta/10 text-cta rounded-3xl flex items-center justify-center group-hover:bg-cta group-hover:text-white transition-all duration-700 shadow-2xl shadow-cta/20">
+              <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+            <span class="feature-badge text-cta">Pattern Discovery</span>
+          </div>
+          <h3 class="text-3xl font-bold text-text-primary mb-8 tracking-tight"><%= t("landing.features.ad_angle.title") %></h3>
+          <div class="grid grid-cols-2 gap-4">
+            <% t("landing.features.ad_angle.angles").each do |angle| %>
+              <div class="feature-tag text-cta text-center py-5 bg-black/20 border-white/5 group-hover:border-cta/30 transition-all">
+                <span class="block text-[10px] uppercase tracking-widest opacity-50 mb-1">Detecté</span>
+                <span class="font-bold text-base"><%= angle %></span>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 4: Longevity Score -->
+      <div class="feature-card glass-card p-8 rounded-[48px] group">
+        <div class="feature-card-glow"></div>
+        <div class="feature-grid-pattern"></div>
+        <div class="relative z-10">
+          <div class="flex items-center justify-between mb-12">
+            <div class="w-20 h-20 bg-cta/10 text-cta rounded-3xl flex items-center justify-center group-hover:bg-cta group-hover:text-white transition-all duration-700 shadow-2xl shadow-cta/20">
+              <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <span class="feature-badge text-cta">Monitoring Temps Réel</span>
+          </div>
+          <h3 class="text-3xl font-bold text-text-primary mb-6 tracking-tight"><%= t("landing.features.longevity.title") %></h3>
+          <p class="text-text-secondary mb-10 leading-relaxed text-lg"><%= t("landing.features.longevity.description") %></p>
+          <div class="bg-black/30 backdrop-blur-2xl p-10 rounded-[32px] border border-white/10 shadow-inner">
+            <div class="flex justify-between items-end mb-6">
+              <span class="text-3xl font-bold text-text-primary">85<span class="text-cta">%</span></span>
+              <span class="text-xs font-bold text-cta bg-cta/10 px-3 py-1 rounded-full">HIGH PERFORMANCE</span>
+            </div>
+            <div class="score-track mb-4 h-4 bg-white/5 rounded-full overflow-hidden">
+              <div class="score-fill w-[85%] h-full bg-gradient-to-r from-cta/40 to-cta rounded-full shadow-[0_0_25px_rgba(59,130,246,0.5)]"></div>
+            </div>
+            <div class="flex justify-between text-[10px] font-bold tracking-[0.2em] text-text-muted uppercase">
+              <span><%= t("landing.features.longevity.short") %></span>
+              <span class="text-cta">Optimization Zone</span>
+              <span><%= t("landing.features.longevity.long") %></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%# Target Audience Section %>
+<section id="audience" class="relative py-32 overflow-hidden bg-surface-subtle/30">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="text-center mb-24">
+      <h2 class="text-4xl md:text-5xl font-bold font-heading text-text-primary mb-6"><%= t("landing.audience.title") %></h2>
+      <p class="text-xl text-text-secondary max-w-2xl mx-auto"><%= t("landing.audience.subtitle") %></p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <% 
+        audience_icons = [
+          '<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>', # Foundateurs SaaS
+          '<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>', # Agences
+          '<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>', # Growth marketers
+          '<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>', # Ecom/Fintech
+          '<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>', # Marques locales
+          '<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/></svg>' # Freelancers
+        ]
+      %>
+      <% t("landing.audience.items").each_with_index do |audience, index| %>
+        <div class="glass-card p-8 rounded-[32px] group hover:bg-cta/5 hover:border-cta/30 transition-all duration-500">
+          <div class="w-14 h-14 bg-cta/10 text-cta rounded-2xl flex items-center justify-center mb-8 group-hover:bg-cta group-hover:text-white transition-all duration-500 shadow-lg shadow-cta/10">
+            <%= audience_icons[index].html_safe %>
+          </div>
+          <h3 class="text-xl font-bold text-text-primary leading-tight"><%= audience %></h3>
+          <div class="mt-4 h-1 w-12 bg-cta/20 group-hover:w-full group-hover:bg-cta/40 transition-all duration-500 rounded-full"></div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>
+
+<%# Cross-Platform & Legality Section %>
+<section class="relative py-32 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+      <div>
+        <div class="inline-flex items-center px-4 py-1.5 rounded-full border border-cta/20 bg-cta/5 text-[10px] font-bold text-cta uppercase tracking-widest mb-8">
+          GEO AD INSIGHT
+        </div>
+        <h2 class="text-4xl font-bold font-heading text-text-primary mb-8 tracking-tight"><%= t("landing.cross_platform.title") %></h2>
+        <p class="text-xl text-text-secondary mb-10 leading-relaxed opacity-90">
+          <%= t("landing.cross_platform.body") %>
+        </p>
+        <div class="grid grid-cols-2 gap-6">
+          <div class="platform-card group">
+            <div class="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center group-hover:bg-primary/20 transition-all">
+              <svg class="w-8 h-8 text-[#1877F2]" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </div>
+            <span class="text-lg font-bold text-text-primary"><%= t("landing.cross_platform.meta_label") %></span>
+            <span class="text-[10px] font-bold text-text-muted tracking-widest uppercase"><%= t("landing.cross_platform.meta_sublabel") %></span>
+          </div>
+          <div class="platform-card group">
+            <div class="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center group-hover:bg-black transition-all">
+              <svg class="w-8 h-8 text-[#010101] dark:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.03 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-2.67.01-5.33.03-8 0-3.54-.04-7.07.02-10.61z"/></svg>
+            </div>
+            <span class="text-lg font-bold text-text-primary"><%= t("landing.cross_platform.tiktok_label") %></span>
+            <span class="text-[10px] font-bold text-text-muted tracking-widest uppercase"><%= t("landing.cross_platform.tiktok_sublabel") %></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="legal-card p-12 rounded-[48px] relative overflow-hidden flex flex-col items-center text-center">
+        <div class="absolute top-0 right-10 bg-success text-white px-6 py-2 text-[10px] font-bold rounded-b-2xl tracking-[0.2em] shadow-lg shadow-success/20">
+          <%= t("landing.cross_platform.legal_badge") %>
+        </div>
+        <div class="w-20 h-20 bg-success/10 text-success rounded-full flex items-center justify-center mb-8">
+          <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        </div>
+        <h3 class="text-2xl font-bold text-text-primary mb-6"><%= t("landing.cross_platform.legal_title") %></h3>
+        <ul class="text-left space-y-4 mb-8">
+          <% t("landing.cross_platform.legal_items").each do |legal_item| %>
+            <li class="flex items-center text-text-secondary">
+              <svg class="w-5 h-5 text-success mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+              <span class="font-medium"><%= legal_item %></span>
+            </li>
+          <% end %>
+        </ul>
+        <div class="p-4 bg-success/10 rounded-2xl border border-success/20">
+          <p class="text-xs font-bold text-success uppercase tracking-widest">RGPD / CCPA COMPLIANT</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="relative overflow-hidden">
+  <div class="blue-beam"></div>
+
+  <%# FAQ Section %>
+  <section id="faq" class="relative py-32">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center mb-20">
+        <h2 class="text-4xl font-bold font-heading text-text-primary mb-6"><%= t("landing.faq.title") %></h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-cta to-transparent mx-auto"></div>
+      </div>
+
+      <div class="space-y-4">
+        <% t("landing.faq.items").each_with_index do |item, index| %>
+          <div class="faq-item glass-card rounded-2xl overflow-hidden">
+            <button class="faq-question w-full px-8 py-6 text-left flex justify-between items-center group" onclick="toggleFaq(<%= index %>)">
+              <span class="font-bold text-lg text-text-primary group-hover:text-cta transition-colors"><%= item[:question] %></span>
+              <svg class="faq-icon w-6 h-6 text-text-muted transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="faq-answer text-text-secondary leading-relaxed border-t border-border-subtle/50">
+              <div class="px-8 pb-6">
+                <%= item[:answer] %>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+
+      <%# Contact Bar — inline SVG avatars (no external dependency), decorative %>
+      <div class="mt-6 p-6 glass-card rounded-[32px] flex flex-col md:flex-row items-center justify-between gap-8 border-white/5">
+        <div class="flex items-center gap-6">
+          <div class="avatar-group" aria-hidden="true">
+            <div class="avatar-item avatar-svg">
+              <svg class="w-full h-full" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><circle cx="50" cy="38" r="18"/><path d="M24 92c0-20 12-30 26-30s26 10 26 30H24z"/></svg>
+            </div>
+            <div class="avatar-item avatar-svg">
+              <svg class="w-full h-full" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><circle cx="50" cy="38" r="18"/><path d="M24 92c0-20 12-30 26-30s26 10 26 30H24z"/></svg>
+            </div>
+            <div class="avatar-item avatar-svg relative">
+              <svg class="w-full h-full" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><circle cx="50" cy="38" r="18"/><path d="M24 92c0-20 12-30 26-30s26 10 26 30H24z"/></svg>
+              <span class="absolute bottom-0.5 right-0.5 w-3.5 h-3.5 bg-success border-2 border-[#1E293B] rounded-full" aria-hidden="true"></span>
+            </div>
+          </div>
+          <p class="text-text-primary font-bold text-lg">
+            <%= t("landing.faq.contact_text") %>
+          </p>
+        </div>
+        <a href="mailto:support@spylitic.com" class="btn-contact-dark whitespace-nowrap">
+          <%= t("landing.faq.contact_button") %>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function toggleFaq(index) {
+      const items = document.querySelectorAll('.faq-item');
+      const item = items[index];
+      const isActive = item.classList.contains('active');
+      
+      // Close all other items
+      items.forEach(i => i.classList.remove('active'));
+      
+      // Toggle current item
+      if (!isActive) {
+        item.classList.add('active');
+      }
+    }
+  </script>
+
+  <%# Final CTA Section %>
+  <section class="relative py-40">
+    <div class="glow-bg w-[800px] h-[800px] bg-cta top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-20 blur-[160px]"></div>
+    <div class="bg-ornament opacity-10"></div>
+    
+    <div class="max-w-5xl mx-auto px-4 text-center relative z-10">
+      <div class="inline-flex items-center px-4 py-2 rounded-full border border-cta/20 bg-cta/5 text-xs font-bold text-cta uppercase tracking-[0.3em] mb-10">
+        <%= t("landing.final_cta.badge") %>
+      </div>
+      
+      <h2 class="text-4xl md:text-6xl font-bold font-heading mb-8 tracking-tighter text-text-primary">
+        <%= t("landing.final_cta.title") %>
+      </h2>
+      <p class="text-2xl text-text-secondary mb-16 max-w-2xl mx-auto leading-relaxed">
+        <%= t("landing.final_cta.subtitle") %>
+      </p>
+
+      <div class="final-cta-box p-12 md:p-16 rounded-[64px] backdrop-blur-3xl text-left border-white/10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h3 class="text-3xl font-bold text-text-primary mb-8 tracking-tight"><%= t("landing.final_cta.box_title") %></h3>
+            <ul class="space-y-6">
+              <% t("landing.final_cta.bullets").each do |bullet| %>
+                <li class="final-cta-bullet text-lg text-text-secondary font-medium">
+                  <%= bullet %>
+                </li>
+              <% end %>
+            </ul>
+          </div>
+          
+          <div class="flex flex-col items-center lg:items-end justify-center">
+            <a href="#" class="btn-final inline-flex items-center justify-center px-16 py-6 text-2xl font-black rounded-[24px] w-full text-center">
+              <%= t("landing.final_cta.button") %>
+            </a>
+            <div class="mt-8 flex items-center gap-6 opacity-60">
+              <div class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span class="text-sm font-bold text-text-primary uppercase tracking-widest"><%= t("landing.final_cta.no_commitment") %></span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span class="text-sm font-bold text-text-primary uppercase tracking-widest"><%= t("landing.final_cta.no_card") %></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

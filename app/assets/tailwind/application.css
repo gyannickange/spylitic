@@ -25,6 +25,7 @@
   /* Actions & Accents */
   --color-cta: #3b82f6;
   --color-cta-hover: #2563eb;
+  --color-cta-light: #60a5fa;
   --color-link: #2563eb;
   --color-focus-ring: #93c5fd;
 
@@ -61,6 +62,7 @@
   /* Actions & Accents (same primary accent in both themes) */
   --color-cta: #3b82f6;
   --color-cta-hover: #2563eb;
+  --color-cta-light: #60a5fa;
   --color-link: #3b82f6;
   --color-focus-ring: #60a5fa;
 
