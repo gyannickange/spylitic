@@ -87,9 +87,13 @@ test:
 production:
   primary: &primary_production
     <<: *default
+    <% if ENV["DATABASE_URL"].present? %>
+    url: <%= ENV["DATABASE_URL"] %>
+    <% else %>
     database: spylitic_production
     username: spylitic
     password: <%= ENV["SPYLITIC_DATABASE_PASSWORD"] %>
+    <% end %>
   cache:
     <<: *primary_production
     database: spylitic_production_cache
