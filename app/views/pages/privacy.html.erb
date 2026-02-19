@@ -26,10 +26,12 @@
       <div class="space-y-12">
         <% t("privacy.sections").each do |section| %>
           <div class="space-y-4">
-            <h2 class="text-2xl font-bold text-text-primary tracking-tight"><%= section["title"] %></h2>
-            <p class="text-text-secondary leading-relaxed opacity-80">
-              <%= section["content"] %>
-            </p>
+            <h2 class="text-2xl font-bold text-text-primary tracking-tight"><%= section[:title] %></h2>
+            <% if section[:content].present? %>
+              <p class="text-text-secondary leading-relaxed opacity-80">
+                <%= section[:content] %>
+              </p>
+            <% end %>
           </div>
         <% end %>
       </div>
