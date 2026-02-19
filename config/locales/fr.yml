@@ -25,6 +25,7 @@ fr:
       soon_badge: "Bientôt"
       legal_heading: "Légal"
       privacy: "Confidentialité"
+      data_deletion: "Suppression des données"
       terms: "CGU"
       legal_notice: "Mentions légales"
       copyright: "© %{year} Spylitic. 100 % légal et transparent."
@@ -179,14 +180,14 @@ fr:
   privacy:
     title: "Politique de confidentialité"
     last_updated: "Dernière mise à jour : 19 février 2026"
-    introduction: "Chez Spylitic, nous prenons votre vie privée au sérieux. Cette Politique de confidentialité explique comment nous collectons, utilisons, divulguons et protégeons vos informations lorsque vous visitez notre site web ou utilisez notre plateforme d'intelligence publicitaire. Veuillez lire attentivement cette politique pour comprendre notre approche en matière de protection de vos données personnelles."
+    introduction: "Chez Spylitic, we take your privacy seriously. Cette Politique de confidentialité explique comment nous collectons, utilisons, divulguons et protégeons vos informations lorsque vous visitez notre site web ou utilisez notre plateforme d'intelligence publicitaire. Veuillez lire attentivement cette politique pour comprendre notre approche en matière de protection de vos données personnelles."
     sections:
       - title: "1. Informations que nous collectons"
         content: "Nous collectons les informations que vous nous fournissez directement, notamment lorsque vous demandez un accès anticipé, créez un compte ou nous contactez. Cela peut inclure votre nom, adresse e-mail, nom de l'entreprise et toute autre information que vous choisissez de fournir. Nous collectons également automatiquement certaines informations lors de votre visite sur notre site, telles que votre adresse IP, le type de navigateur, les informations sur l'appareil, les pages visitées et les URL de référence. Nous utilisons des cookies et des technologies similaires pour collecter ces données et améliorer votre expérience."
       - title: "2. Comment nous utilisons les informations"
         content: "Nous utilisons les informations collectées pour fournir, maintenir et améliorer nos services ; traiter vos demandes d'accès anticipé et communiquer avec vous concernant votre compte ; vous envoyer des mises à jour produit, des communications marketing (lorsque vous avez opté pour les recevoir) et des messages de support ; analyser les tendances d'utilisation et optimiser notre plateforme ; détecter, prévenir et traiter les problèmes techniques et les menaces de sécurité ; et nous conformer à nos obligations légales. Nous ne vendons pas vos informations personnelles à des tiers."
       - title: "3. Sécurité des données"
-        content: "Nous mettons en œuvre des mesures techniques et organisationnelles conformes aux normes du secteur pour protéger vos informations personnelles contre tout accès, modification, divulgation ou destruction non autorisés. Cela inclut le chiffrement en transit (TLS/SSL), le stockage sécurisé des données, les contrôles d'accès et des évaluations de sécurité régulières. Bien que nous nous efforcions de protéger vos données, aucune méthode de transmission sur Internet ou de stockage électronique n'est totalement sécurisée, et nous ne pouvons garantir une sécurité absolue."
+        content: "Nous mettons en œuvre des mesures techniques et organisationnelles conformes aux normes du secteur pour protéger vos informations personnelles contre tout accès, modification, divulgation ou destruction non autorisés. Cela inclut le chiffrement en transit (TLS/SSL), le stockage sécurisé des données, les contrôles d'accès et des évaluations de sécurité régulières. Bien que nous nous efforcions de protéger vos données, aucune méthode de transmission sur Internet ou de stockage électronique n'est totalement sécurisée, et we cannot guarantee absolute security."
       - title: "4. Conservation des données"
         content: "Nous conservons vos informations personnelles uniquement pendant la durée nécessaire pour atteindre les objectifs pour lesquels elles ont été collectées, y compris pour satisfaire aux obligations légales, comptables ou de reporting. Lorsque vos données ne sont plus nécessaires, nous les supprimons ou les anonymisons de manière sécurisée. Vous pouvez demander la suppression de vos données à tout moment en nous contactant à privacy@spylitic.com."
       - title: "5. Vos droits"
@@ -199,3 +200,16 @@ fr:
         content: "Vos informations peuvent être transférées et traitées dans des pays autres que votre pays de résidence. Ces pays peuvent avoir des lois différentes en matière de protection des données. Lorsque nous transférons des données à l'international, nous prenons les mesures appropriées pour garantir que vos informations restent protégées conformément à cette Politique de confidentialité et à la loi applicable."
       - title: "9. Modifications de cette politique"
         content: "Nous pouvons mettre à jour cette Politique de confidentialité de temps à autre pour refléter les changements dans nos pratiques ou les exigences légales. Nous vous informerons de toute modification importante en publiant la politique mise à jour sur cette page et en mettant à jour la date « Dernière mise à jour ». Nous vous encourageons à consulter cette politique périodiquement pour obtenir les dernières informations sur nos pratiques en matière de confidentialité."
+
+  data_deletion:
+    title: "Demande de suppression de données"
+    introduction: "Si vous souhaitez supprimer vos données associées à Spylitic, vous pouvez le faire des manières suivantes :"
+    methods:
+      account_deletion:
+        title: "1. Suppression du compte"
+        description: "Les utilisateurs peuvent supprimer leur compte directement depuis les paramètres de l'application Spylitic. Une fois supprimé, toutes les données personnelles associées au compte sont définitivement retirées de nos systèmes."
+      email_request:
+        title: "2. Demande par e-mail"
+        description: "Les utilisateurs peuvent également demander la suppression de leurs données en envoyant un e-mail à %{email} avec pour objet \"Demande de suppression de données\"."
+    process: "Après réception de la demande, Spylitic vérifiera l'identité de l'utilisateur et traitera la suppression dans un délai de 30 jours."
+    contact_info: "Pour toute question, veuillez contacter %{email}."

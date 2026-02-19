@@ -13,5 +13,6 @@ Rails.application.routes.draw do
     # Defines the root path route ("/")
     root "pages#landing"
     get "privacy", to: "pages#privacy"
+    get "privacy/data-deletion", to: "pages#data_deletion"
   end
 end

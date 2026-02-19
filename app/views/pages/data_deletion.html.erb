@@ -1,0 +1,56 @@
+<% content_for :title, t("data_deletion.title") %>
+
+<section class="relative py-32 overflow-hidden min-h-screen">
+  <div class="hero-grid"></div>
+  <div class="hero-glow-main !left-1/3 opacity-20"></div>
+
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="mb-16">
+      <a href="<%= root_path %>" class="inline-flex items-center text-cta hover:text-cta-hover transition-colors font-bold mb-8">
+        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M11 17l-5-5m0 0l5-5m-5 5h12"/></svg>
+        <%= t("layouts.navbar.problem") == "Problem" ? "Back to home" : "Retour à l'accueil" %>
+      </a>
+      <h1 class="text-4xl md:text-5xl font-black font-heading text-text-primary mb-4 tracking-tight">
+        <%= t("data_deletion.title") %>
+      </h1>
+    </div>
+
+    <div class="glass-card p-8 md:p-12 rounded-[40px] border-white/10 mb-12">
+      <p class="text-xl text-text-secondary leading-relaxed mb-12 font-medium">
+        <%= t("data_deletion.introduction") %>
+      </p>
+
+      <div class="space-y-12">
+        <div class="space-y-4">
+          <h2 class="text-2xl font-bold text-text-primary tracking-tight">
+            <%= t("data_deletion.methods.account_deletion.title") %>
+          </h2>
+          <p class="text-text-secondary leading-relaxed opacity-80">
+            <%= t("data_deletion.methods.account_deletion.description") %>
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <h2 class="text-2xl font-bold text-text-primary tracking-tight">
+            <%= t("data_deletion.methods.email_request.title") %>
+          </h2>
+          <p class="text-text-secondary leading-relaxed opacity-80">
+            <%= t("data_deletion.methods.email_request.description", email: "contact@spylitic.com") %>
+          </p>
+        </div>
+
+        <div class="pt-8 border-t border-white/5">
+          <p class="text-text-secondary leading-relaxed opacity-80 italic">
+            <%= t("data_deletion.process") %>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center p-8 rounded-3xl bg-cta/5 border border-cta/20">
+      <p class="text-text-secondary">
+        <%= t("data_deletion.contact_info", email: mail_to("contact@spylitic.com", "contact@spylitic.com", class: "text-cta font-bold hover:underline")).html_safe %>
+      </p>
+    </div>
+  </div>
+</section>
