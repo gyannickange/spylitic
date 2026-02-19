@@ -27,7 +27,7 @@
       <div>
         <h4 class="font-bold text-text-primary mb-6"><%= t("layouts.footer.legal_heading") %></h4>
         <ul class="space-y-4 text-text-secondary">
-          <li><%= t("layouts.footer.privacy") %></li>
+          <li><%= link_to t("layouts.footer.privacy"), privacy_path, class: "hover:text-cta transition-colors" %></li>
           <li><%= t("layouts.footer.terms") %></li>
           <li><%= t("layouts.footer.legal_notice") %></li>
         </ul>
