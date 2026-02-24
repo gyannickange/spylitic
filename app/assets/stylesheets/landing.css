@@ -633,3 +633,125 @@ section {
   box-shadow: 0 15px 30px rgba(59, 130, 246, 0.4);
   background: var(--color-cta-hover);
 }
+
+/* ==========================================================================
+   Mobile Navigation Menu
+   ========================================================================== */
+
+/* Hamburger button lines */
+.hamburger-line {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease, width 0.3s ease;
+  margin: 3px 0;
+}
+
+/* Open state: morph into an X */
+.mobile-menu-btn.is-open .hamburger-line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.mobile-menu-btn.is-open .hamburger-line:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.mobile-menu-btn.is-open .hamburger-line:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Mobile drawer */
+.mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease;
+  opacity: 0;
+  border-top: 1px solid transparent;
+}
+
+.mobile-menu.is-open {
+  max-height: 400px;
+  opacity: 1;
+  border-top-color: var(--glass-border);
+}
+
+/* Mobile nav links */
+.mobile-nav-link {
+  display: block;
+  padding: 12px 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  transition: color 0.2s ease, background 0.2s ease, padding-left 0.2s ease;
+}
+
+.mobile-nav-link:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+  padding-left: 16px;
+}
+
+/* Mobile adjustments for platform stack */
+@media (max-width: 640px) {
+  .platform-stack {
+    height: 480px;
+  }
+
+  .stack-card-1 {
+    top: 0;
+    right: 10px;
+    transform: rotateZ(-2deg) rotateX(10deg) scale(0.85);
+  }
+
+  .stack-card-2 {
+    top: 90px;
+    right: 30px;
+    transform: rotateZ(3deg) rotateX(15deg) scale(0.85);
+  }
+
+  .stack-card-3 {
+    top: 180px;
+    right: 50px;
+    transform: rotateZ(-1deg) rotateX(20deg) scale(0.85);
+  }
+
+  @keyframes stack-float-1 {
+
+    0%,
+    100% {
+      transform: translateY(0) rotateZ(-2deg) rotateX(10deg) scale(0.85);
+    }
+
+    50% {
+      transform: translateY(-15px) rotateZ(-1deg) scale(0.85);
+    }
+  }
+
+  @keyframes stack-float-2 {
+
+    0%,
+    100% {
+      transform: translateY(0) rotateZ(3deg) rotateX(15deg) scale(0.85);
+    }
+
+    50% {
+      transform: translateY(-10px) rotateZ(4deg) scale(0.85);
+    }
+  }
+
+  @keyframes stack-float-3 {
+
+    0%,
+    100% {
+      transform: translateY(0) rotateZ(-1deg) rotateX(20deg) scale(0.85);
+    }
+
+    50% {
+      transform: translateY(-15px) rotateZ(-2deg) scale(0.85);
+    }
+  }
+}
