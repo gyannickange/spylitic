@@ -1,23 +1,78 @@
 <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass-nav">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-20">
+      <!-- Logo -->
       <div class="flex items-center">
         <a href="/" class="flex items-center space-x-2">
-          <%= image_tag "logo-white.png", alt: "Spylitic Logo", class: "h-8 w-auto" %>
+          <%= image_tag "logo-white.png", alt: "Spylitic Logo", class: "h-10 w-auto" %>
         </a>
       </div>
+
+      <!-- Desktop nav links -->
       <div class="hidden md:flex items-center space-x-8">
         <a href="#problem" class="text-sm font-medium text-text-secondary hover:text-cta transition-colors"><%= t("layouts.navbar.problem") %></a>
         <a href="#solution" class="text-sm font-medium text-text-secondary hover:text-cta transition-colors"><%= t("layouts.navbar.solution") %></a>
         <a href="#features" class="text-sm font-medium text-text-secondary hover:text-cta transition-colors"><%= t("layouts.navbar.features") %></a>
         <a href="#audience" class="text-sm font-medium text-text-secondary hover:text-cta transition-colors"><%= t("layouts.navbar.audience") %></a>
       </div>
-      <div class="flex items-center space-x-4">
+
+      <!-- Desktop CTA buttons -->
+      <div class="hidden md:flex items-center space-x-4">
         <a href="#" class="text-sm font-semibold text-text-primary hover:text-cta transition-colors"><%= t("layouts.navbar.explore_ads") %></a>
         <a href="#" class="inline-flex items-center justify-center px-5 py-2.5 border border-transparent text-sm font-bold rounded-full text-white bg-cta hover:bg-cta-hover transition-all shadow-lg shadow-cta/20 hover:scale-105 active:scale-95">
+          <%= t("layouts.navbar.join_early_access") %>
+        </a>
+      </div>
+
+      <!-- Mobile hamburger button -->
+      <button id="mobile-menu-btn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded-xl focus:outline-none mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu drawer -->
+  <div id="mobile-menu" class="mobile-menu md:hidden" aria-hidden="true">
+    <div class="max-w-7xl mx-auto px-4 pb-6 pt-2 flex flex-col space-y-1">
+      <a href="#problem" class="mobile-nav-link"><%= t("layouts.navbar.problem") %></a>
+      <a href="#solution" class="mobile-nav-link"><%= t("layouts.navbar.solution") %></a>
+      <a href="#features" class="mobile-nav-link"><%= t("layouts.navbar.features") %></a>
+      <a href="#audience" class="mobile-nav-link"><%= t("layouts.navbar.audience") %></a>
+      <div class="pt-4 border-t border-white/10 flex flex-col space-y-3">
+        <a href="#" class="mobile-nav-link font-semibold"><%= t("layouts.navbar.explore_ads") %></a>
+        <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-sm font-bold rounded-full text-white bg-cta hover:bg-cta-hover transition-all shadow-lg shadow-cta/20 active:scale-95">
           <%= t("layouts.navbar.join_early_access") %>
         </a>
       </div>
     </div>
   </div>
 </nav>
+
+<script>
+  (function () {
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    let open = false;
+
+    btn.addEventListener('click', function () {
+      open = !open;
+      btn.classList.toggle('is-open', open);
+      menu.classList.toggle('is-open', open);
+      btn.setAttribute('aria-expanded', open);
+      menu.setAttribute('aria-hidden', !open);
+    });
+
+    // Close on nav link click
+    menu.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        open = false;
+        btn.classList.remove('is-open');
+        menu.classList.remove('is-open');
+        btn.setAttribute('aria-expanded', false);
+        menu.setAttribute('aria-hidden', true);
+      });
+    });
+  })();
+</script>

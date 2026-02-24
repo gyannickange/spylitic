@@ -634,6 +634,67 @@ section {
   background: var(--color-cta-hover);
 }
 
+/* ==========================================================================
+   Mobile Navigation Menu
+   ========================================================================== */
+
+/* Hamburger button lines */
+.hamburger-line {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease, width 0.3s ease;
+  margin: 3px 0;
+}
+
+/* Open state: morph into an X */
+.mobile-menu-btn.is-open .hamburger-line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.mobile-menu-btn.is-open .hamburger-line:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.mobile-menu-btn.is-open .hamburger-line:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Mobile drawer */
+.mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease;
+  opacity: 0;
+  border-top: 1px solid transparent;
+}
+
+.mobile-menu.is-open {
+  max-height: 400px;
+  opacity: 1;
+  border-top-color: var(--glass-border);
+}
+
+/* Mobile nav links */
+.mobile-nav-link {
+  display: block;
+  padding: 12px 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  transition: color 0.2s ease, background 0.2s ease, padding-left 0.2s ease;
+}
+
+.mobile-nav-link:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+  padding-left: 16px;
+}
+
 /* Mobile adjustments for platform stack */
 @media (max-width: 640px) {
   .platform-stack {
